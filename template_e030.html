@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Web Project</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet" type="text/css">     
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">   
+</head>
+    
+    
+        
+       
+<style>
+/*
+body {
+    font-family: "Lato", sans-serif;
+}*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: light blue;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+<body id="tattoo">
+    <dev id="header">
+    <hgroup>
+    	
+        <header id="MainHeader">
+            <h1>Tattoos</h1>
+        </header>
+        <header id="Slogan">
+            <h2><i>Fine lines and Fine Designs</i></h2>
+        </header>
+            <h3>Feturing</h3>
+        	<h4>Mike Lytwynec</h4>
+            <p style="color: black" font-size="1.5em">Specializing in:</p>
+                   
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="/data/menu1_3.html">Skulls</a>
+  <a href="/data/menu1_2.html">Drawings</a>
+  <a href="/data/menu1_4.html">Portraits</a>
+  <a href="/data/menu1_5.html">Pinups</a>
+  <a href="data/menu1_6.html">not asigned</a>
+  <a href="/data/menu1_7.html">un assigned</a>
+   <a href="/data/###">un assigned</a>
+    <a href="/data/###">un assigned</a>
+    
+</div>
+
+
+<div id="main">
+  <p>Click on the element below to open the<br/>
+   side navigation menu, and push this content to the right.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</hgroup>
+    <table>
+        <tr>
+        <td>
+        <section id="moreInformation"><h5>For more information.<br>
+        You can leave you name, email,<br />
+        and phone number.</h5>
+        <div class="contact-form">
+        <form id="contact-form" method="POST" action="form-to-email.php">
+        <div class="control-group" style="font-size:12px">
+        	<label>Your Name</label>
+        	<input required autofocus autocomplete="off" class="fullname validated" id="contactName" type="text" name="fullname" />
+        </div>
+        <div class="control-group" style="font-size:12px">
+            <label>Email</label>
+        	<input required class="email validated" type="text" name="email" />           
+        </div>
+    	<div class="control-group">
+            <label>Phone (optional)</label>
+        	<input class="phone" type="text" name="phone" />
+        </div>
+        <div class="control-group">
+            <label>Message</label>
+            <textarea class="message" name="message"></textarea>
+        </div>
+        <div id="errors"></div>
+        <div class="control-group no-margin">
+            <input type="submit" name="mailto" value="submit" id="submit" />or <input type="reset" value="Erase and Start Over" />
+        </div>
+        	</form>
+        <div id='msg_submitting'><h2>Submitting ...</h2></div>
+        <div id='msg_submitted'><h2>Thank you !<br> The form was submitted Successfully.</h2></div>     
+        </div>
+        </section>
+        </td>
+        </tr>
+    </table>
+        <footer style="color: black"; font-size="1em">Tattoos are painfull!!! NO Crying!!!</footer>
+        </dev>
+        </body>
+  <!-- JavaScript Files -->
+    <script>
+        var contactName = document.getElementById('contactName')
+        contactName.oninvalid = function(e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                if (e.target.value.length == 0) {
+                    e.target.setCustomValidity("Contact name is required you IDOT...");
+                } else if (e.target.value.length < 5) {
+                    e.target.setCustomValidity("First and last names.");
+                }
+            }
+        };
+    </script>
+
+	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- End JavaScript Files -->
+
+</html> 

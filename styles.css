@@ -1,0 +1,176 @@
+#tattoo {
+    font-family: 'Nosifer', cursive;
+    color: aqua;
+    background-image: url(photo11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#MainHeader{
+    font-family: 'Nosifer', cursive;
+    font-stretch: ultra-expanded;
+    color: black;
+    
+}
+#Slogan {
+    font-family: 'Frijole', cursive;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: black;
+}
+
+section {
+  /*  width:30%;*/
+/*    height:60%;*/
+    float:right;
+    padding-top: 400px;
+    color: black
+}
+/*
+#infoScreen {
+    float: right;
+	color: black;    
+}
+*/
+#header {
+    vertical-align: top;
+    Font-size: 1em;   
+}
+footer {
+    width: auto;
+    height: auto;
+    padding-top: 750px;
+    padding-bottom: 0px;
+    font-family: 'Nosifer', cursive;
+    font-size: 20px;
+    text-align:left; 
+   
+    
+}
+table {
+    padding-top: 120px;
+    font-family:'Frijole', cursive;        
+    line-height: 9px;
+    font-size: 10px;
+    float:right;
+}
+h1 {
+    font-family: 'Nosifer', cursive;
+    backface-visibility: visible;
+    font-size:6em;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+}
+h2 {
+    font-size: 1em;
+}
+/*h5 {
+    font-size: 0.7em;
+}*/
+.validated:invalid {
+    background: #FAC3C9;
+}
+.validated:valid {
+    background: #BDF0A8;
+}
+
+label {
+	width:130px;
+	display:inline-grid;
+	vertical-align:center;
+}
+
+input {
+	width:130px;
+}
+.control-group {
+    margin-bottom: 10px;
+}
+
+.formRow {
+	margin-bottom:10px;
+}
+
+
+
+hgroup {
+    width:50%;
+    height:50%;
+    float:left;
+}
+
+hgroup h1 {
+}
+
+hgroup h2 {
+   font-family:'Frijole', cursive; 
+  text-transform:uppercase;
+  font-size:3em;
+  line-height:1em;
+}
+hgroup h3 {
+    font-family: 'Frijole', cursive;
+	font-size:2em;
+	line-height:1em;
+}
+hgroup h4 {
+    color: black;
+    font-family: 'Nosifer', cursive;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+a{
+    font-family: 'nosifer', cursive;
+    font-weight:normal;
+    text-decoration-color: crimson;
+}
+a:link {
+    color:teal;
+}
+a:visited {
+    color: dimgrey;
+}
+a:hover, a:active {
+    color: darkmagenta;
+}
+p {
+    font-family: 'nosifer', cursive;
+    color: white;
+    font-size: 1.2em;
+    margin:10px;
+}
+nav {
+    height: 105px;
+    width:205px;
+    float:left;
+   
+}
+
+nav ul {
+    text-align: left;
+    list-style-type: inherit;
+    border-spacing: 5px;
+}
+
+nav li {
+    line-height: 18px;
+    font-size: 0.8em;
+    float:left;
+    margin-right:20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+img {
+  vertical-align: text-top;
+  margin:0px 0px 10px 10px;
+  box-shadow:3px 3px 5px 1px #cccccc;
+}
+.contact-form #msg_submitting{
+    display:none;
+}
+
+.contact-form #msg_submitted{
+    display:none;
+}
